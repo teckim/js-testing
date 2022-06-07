@@ -1,20 +1,27 @@
-const calculator = require('./calculator.js')
+const { add, subtract, multiply, divide } = require("./calculator.js");
 
-describe('my beverage', () => {
-  test('1 + 2 = 3', () => {
-    expect(calculator.add(1, 2)).toBe(3);
+describe("my beverage", () => {
+  test("1 + 2 = 3", () => {
+    const result = add(1, 2);
+
+    expect(result).toBe(3);
   });
 
-  test('5 - 4 = 1', () => {
-    expect(calculator.subtract(5, 4)).toBe(1);
+  test("5 - 4 = 1", () => {
+    const result = subtract(5, 4);
+
+    expect(result).toBe(1);
   });
 
-  test('3 * 2 = 6', () => {
-    expect(calculator.multiply(3, 2)).toBe(6);
+  test("3 * 2 = 6", () => {
+    const result = multiply(3, 2);
+
+    expect(result).toBe(6);
   });
 
-  test('4 / 2 = 2', () => {
-    expect(calculator.divide(4, 2)).toBe(2);
+  test("4 / 2 = 2", () => {
+    const result = divide(4, 2);
+
+    expect(result).toBe(2);
   });
 });
-

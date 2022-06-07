@@ -1,5 +1,7 @@
 const capitalize = require('./capitalize.js')
 
 test('"hello" should be "Hello":', () => {
-  expect(capitalize("hello")).toBe("Hello");
+  const capitalized = capitalize("hello");
+
+  expect(capitalized).toBe("Hello");
 });
